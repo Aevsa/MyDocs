@@ -21,8 +21,8 @@ driver.find_element(By.XPATH, "//a[@data-testid='open-registration-form-button']
 WebDriverWait(driver, 2)
 
 # Step 3: Fill out basic fields
-driver.find_element(By.NAME, "firstname").send_keys("Naren")
-driver.find_element(By.NAME, "lastname").send_keys("Iyer")
+driver.find_element(By.NAME, "firstname").send_keys("Xavier")
+driver.find_element(By.NAME, "lastname").send_keys("Mark")
 driver.find_element(By.NAME, "reg_email__").send_keys("naren.iyer100@gmail.com")
 
 # Step 4: ✅ Try to fill confirmation email if it appears
@@ -39,9 +39,9 @@ except:
 driver.find_element(By.NAME, "reg_passwd__").send_keys("MyDummyPassword123")
 
 # Step 6: Select date of birth
-Select(driver.find_element(By.ID, "day")).select_by_visible_text("10")
-Select(driver.find_element(By.ID, "month")).select_by_visible_text("Apr")
-Select(driver.find_element(By.ID, "year")).select_by_visible_text("1966")
+Select(driver.find_element(By.ID, "day")).select_by_visible_text("8")
+Select(driver.find_element(By.ID, "month")).select_by_visible_text("May")
+Select(driver.find_element(By.ID, "year")).select_by_visible_text("1975")
 
 # Step 7: Select gender
 driver.find_element(By.XPATH, "//input[@name='sex' and @value='1']").click()

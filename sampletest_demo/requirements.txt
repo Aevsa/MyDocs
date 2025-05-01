@@ -1,0 +1,7 @@
+selenium>=4.0.0
+pytest>=7.0.0
+pytest-xdist
+pytest-html
+python-dotenv
+webdriver-manager
+allure-pytest

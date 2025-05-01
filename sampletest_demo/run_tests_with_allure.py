@@ -28,3 +28,4 @@ def run_tests_and_generate_allure():
 
 if __name__ == "__main__":
     run_tests_and_generate_allure()
+

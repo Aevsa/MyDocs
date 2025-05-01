@@ -7,7 +7,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 class DriverFactory:
-    _driver = None
+    _driver = None # Singleton Design Pattern - Class Variable
 
     @classmethod
     def get_driver(cls, browser_name):
